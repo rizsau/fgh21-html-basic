@@ -1,0 +1,33 @@
+.board {
+    height: 300px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    height: 12.5%;
+    width: 300px;
+}
+
+.square {
+    border: 1px solid black;
+    width: 12.5%;
+    height: 100%;
+    margin: auto;
+}
+
+.row .square:nth-of-type(even) {
+    background-color: white;
+}
+
+.row .square:nth-of-type(odd) {
+    background-color: black;
+}
+
+.row:nth-of-type(even) .square:nth-of-type(even) {
+    background-color: black;
+}
+
+.row:nth-of-type(even) .square:nth-of-type(odd) {
+    background-color: white;
+}
